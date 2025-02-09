@@ -6,7 +6,16 @@ from fuzzywuzzy import process
 import pandas as pd
 
 # Load spaCy English NLP model
-nlp = spacy.load("en_core_web_sm")
+import spacy
+import subprocess
+
+# Ensure the spaCy model is installed
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
+
 
 # Streamlit UI
 st.set_page_config(page_title="NLP SQLite Chat Assistant", layout="wide")
