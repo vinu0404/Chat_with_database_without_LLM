@@ -1,5 +1,4 @@
 streamlit
-sqlite3
 spacy
 fuzzywuzzy
 python-Levenshtein
