@@ -130,7 +130,9 @@ print("Database created successfully with sample data ")
 
 ```
 
-
+```
+python -m spacy download en_core_web_sm   # run in terminal if get error of spacy 
+```
 
 ### Known Limitations
 
