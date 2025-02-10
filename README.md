@@ -147,6 +147,5 @@ python -m spacy download en_core_web_sm   # run in terminal if get error of spac
     
 *   Expand support for more query types.
     
-*   Integrate with a web-based UI using Streamlit.
     
 
